@@ -47,7 +47,7 @@ inicio
       para l de 1 ate 4 faca
             para c de 1 ate 4 faca
                   se campo[l, c] = 0 entao
-                        valCampo[l, c] <- "•"
+                        valCampo[l, c] <- "â€¢"
                   fimse
                   se campo[l, c] = 2 entao
                         valCampo[l, c] <- "1"
@@ -139,7 +139,7 @@ inicio
             escreva("Comando: ")
             leia(botao)
 
-            // REPETE SE NÃO FOR WASD
+            // REPETE SE NÃƒO FOR WASD
             se (botao <> "w") e (botao <> "a") e (botao <> "s") e (botao <> "d") entao
                   apresentaTela
             fimse
@@ -169,7 +169,7 @@ procedimento moverCima()
 var
    l, c, k: inteiro
 inicio
-      // Repara q o 'c' virou o laço de fora
+      // Repara q o 'c' virou o laÃ§o de fora
       para c de 1 ate 4 faca
             // Passo 1: Empurrar pra cima
             para l de 1 ate 3 faca
@@ -211,7 +211,7 @@ procedimento moverBaixo()
 var
    l, c, k: inteiro
 inicio
-      // Repara q o 'c' virou o laço de fora
+      // Repara q o 'c' virou o laÃ§o de fora
       para c de 1 ate 4 faca
             // Passo 1: Empurrar pra cima
             para l de 4 ate 2 passo -1 faca
@@ -253,7 +253,7 @@ procedimento moverDireita()
 var
    l, c, k: inteiro
 inicio
-      // Repara q o 'c' virou o laço de fora
+      // Repara q o 'c' virou o laÃ§o de fora
       para l de 1 ate 4 faca
             // Passo 1: Empurrar pra cima
             para c de 4 ate 2 passo -1 faca
@@ -295,7 +295,7 @@ procedimento moverEsquerda()
 var
    l, c, k: inteiro
 inicio
-      // Repara q o 'c' virou o laço de fora
+      // Repara q o 'c' virou o laÃ§o de fora
       para l de 1 ate 4 faca
             // Passo 1: Empurrar pra cima
             para c de 1 ate 3 faca
