@@ -1,6 +1,8 @@
+// Fiz um algoritmo que mostra para o usu√°rio de n√∫meros entre 1 e 10 
+
 Algoritmo "Fatorial"
 
-// DescriÁ„o   : Mostra o Fatorial de 1 a 10
+// Descri√ß√£o   : Mostra o Fatorial de 1 a 10
 // Autor(a)    : Samuel Souza Ferreira
 // Data atual  : 30/04/2026
 
@@ -16,7 +18,7 @@ var
    
 inicio
    textoFormatado <- maiusc(nome)
-   escreval("Oi ", textoFormatado, ", no passo ", posicao, " o valor È: ", valor)
+   escreval("Oi ", textoFormatado, ", no passo ", posicao, " o valor √©: ", valor)
 fimprocedimento
 
 inicio
@@ -27,8 +29,8 @@ inicio
    leia(nomeUsuario)
 
    escreval("")
-   escreval("Ol·, ", nomeUsuario, "!")
-   escreva("Digite um n˙mero inteiro (entre 1 e 10) para calcular o fatorial: ")
+   escreval("Ol√°, ", nomeUsuario, "!")
+   escreva("Digite um n√∫mero inteiro (entre 1 e 10) para calcular o fatorial: ")
    leia(n)
 
    fat <- 1
@@ -38,7 +40,7 @@ inicio
    fimpara
 
    escreval("")
-   escreval("--- PROCESSAMENTO CONCLUÕDO ---")
+   escreval("--- PROCESSAMENTO CONCLU√çDO ---")
    escreval("")
 
    para i de 1 ate n faca
@@ -46,5 +48,5 @@ inicio
    fimpara
 
    escreval("")
-   escreval("O resultado final do fatorial de ", n, " È: ", fat)
+   escreval("O resultado final do fatorial de ", n, " √©: ", fat)
 fimalgoritmo
