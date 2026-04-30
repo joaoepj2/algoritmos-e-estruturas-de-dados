@@ -1,5 +1,3 @@
-// Fiz um algoritmo que mostra para o usuário de números entre 1 e 10 
-
 Algoritmo "Fatorial"
 
 // Descrição   : Mostra o Fatorial de 1 a 10
