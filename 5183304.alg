@@ -1,4 +1,4 @@
-algoritmo "Inventário Loja de Roupa"
+algoritmo "InventÃ¡rio Loja de Roupa"
 
 var
 
@@ -11,7 +11,7 @@ var
   i: inteiro
   valorTotalLoja, valorItem: real
 
-  // Função estoque
+  // FunÃ§Ã£o estoque
 
 funcao StatusEstoque(qtd: inteiro): caractere
   inicio
@@ -26,10 +26,10 @@ inicio
   escreval("*SISTEMA DE ESTOQUE*")
   escreval("Cadastre os itens")
 
-  // Estrutura de repetição
+  // Estrutura de repetiÃ§Ã£o
 
   para i de 1 ate 3 faca
-    escreval("Nome do produto (Ex: Camisa, Tênis, Moletom): ")
+    escreval("Nome do produto (Ex: Camisa, TÃªnis, Moletom): ")
     leia(produtos[i])
     escreval("No estoque: ")
     leia(quantidades[i])
@@ -40,16 +40,16 @@ inicio
 
   limpatela
 
-  escreval("----------------- Inventário -----------------")
+  escreval("----------------- InventÃ¡rio -----------------")
   escreval("PRODUTO          | QTD | VALOR TOTAL  | STATUS")
 
   valorTotalLoja <- 0
 
-  // Processo e saída
+  // Processo e saÃ­da
 
   para i de 1 ate 3 faca
 
-    // Multiplicação dos itens x preço
+    // MultiplicaÃ§Ã£o dos itens x preÃ§o
 
     valorItem <- quantidades[i] * precos[i]
 
@@ -57,7 +57,7 @@ inicio
 
     valorTotalLoja <- valorTotalLoja + valorItem
 
-    // Exibição formatada
+    // ExibiÃ§Ã£o formatada
 
     escreval(produtos[i]:16, " | ", quantidades[i]:3, " | R$", valorItem:10:2, " | ", StatusEstoque(quantidades[i]))
   fimpara
