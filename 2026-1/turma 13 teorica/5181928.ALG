@@ -1,4 +1,4 @@
-lgoritmo "calculador de notas"
+algoritmo "calculador de notas"
 
 Var
 
@@ -26,8 +26,8 @@ fimfuncao
 
 Inicio
 
-escreval("ola professor(a) seja bem vindo a seu calculador de médias")
-escreval("lembrando que nesse sistema só pode se calcular a media de 9 alunos, tendo q ser digitada sua nota final")
+escreval("ola professor(a) seja bem vindo a seu calculador de mÃ©dias")
+escreval("lembrando que nesse sistema sÃ³ pode se calcular a media de 9 alunos, tendo q ser digitada sua nota final")
 
 
 para i de 1 ate 9 faca
