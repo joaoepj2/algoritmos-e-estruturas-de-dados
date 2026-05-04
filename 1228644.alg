@@ -6,7 +6,7 @@ Var
    i: inteiro
    soma, mediaFinal: real
 
-// 2. CriaÁ„o de uma FUN«√O para processar os dados (c·lculo da mÈdia)
+// 2. Cria√ß√£o de uma FUN√á√ÉO para processar os dados (c√°lculo da m√©dia)
 funcao calcularMedia(total: real; quantidade: inteiro): real
 
 Inicio
@@ -15,31 +15,31 @@ fimfuncao
 
 
 inicio
-   // 3. Informando ao utilizador quais informaÁıes ele deve fornecer
-   escreval("--- SISTEMA DE C¡LCULO DE M…DIA ---")
+   // 3. Informando ao utilizador quais informa√ß√µes ele deve fornecer
+   escreval("--- SISTEMA DE C√ÅLCULO DE M√âDIA ---")
    escreval("Por favor, informe 5 notas para o processamento.")
    escreval("-----------------------------------")
 
    soma <- 0
 
-   // 4. Estrutura de REPETI«√O para ler os dados e preencher o vetor
+   // 4. Estrutura de REPETI√á√ÉO para ler os dados e preencher o vetor
    para i de 1 ate 5 faca
       escreva("Digite a nota ", i, ": ")
       leia(notas[i])
-      soma <- soma + notas[i] // Processamento matem·tico
+      soma <- soma + notas[i] // Processamento matem√°tico
    fimpara
 
-   // Chamada da funÁ„o para calcular o resultado
+   // Chamada da fun√ß√£o para calcular o resultado
    mediaFinal <- calcularMedia(soma, 5)
 
-   // 5. ApresentaÁ„o dos resultados processados
+   // 5. Apresenta√ß√£o dos resultados processados
    escreval(" ")
    escreval("--- RESULTADOS ---")
-   escreval("A mÈdia das 5 notas inseridas È: ", mediaFinal:4:2)
+   escreval("A m√©dia das 5 notas inseridas √©: ", mediaFinal:4:2)
    escreval(" ")
 
    escreval("Resumo das notas registradas:")
-   // Outra estrutura de repetiÁ„o para exibir o que foi salvo no vetor
+   // Outra estrutura de repeti√ß√£o para exibir o que foi salvo no vetor
    para i de 1 ate 5 faca
       escreval("Nota ", i, ": ", notas[i])
    fimpara
