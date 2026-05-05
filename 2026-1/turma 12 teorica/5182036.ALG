@@ -94,7 +94,7 @@ inicio
   i <- 0
 
 
-limpatela()
+// limpatela()
 
 // monta a tabela usando logica de contagem de caracteres e quebra de linhas
 desenharLinha(maiorNome+48, "-") //desenha a linha do topo da tabela
@@ -121,13 +121,13 @@ desenharLinha(maiorNome+48, "-")
 
     //verifica a media do aluno, se for abaixo de 70 ele esta reprovado, ao contrario, aprovado
     se notaAlunos[i] >= 70.0 entao
-      MudaCor("VERDE", "FRENTE")    //ou o meu visualg esta bugado, ou so nao funciona o MudaCor mesmo
+      //MudaCor("VERDE", "FRENTE")    //ou o meu visualg esta bugado, ou so nao funciona o MudaCor mesmo
       padding("Aprovado", 9) //nao quebrar a tabela
     senao
-      MudaCor("VERMELHO", "FRENTE") //ou o meu visualg esta bugado, ou so nao funciona o MudaCor mesmo
+      //MudaCor("VERMELHO", "FRENTE") //ou o meu visualg esta bugado, ou so nao funciona o MudaCor mesmo
       escreva("Reprovado")
     fimse
-    MudaCor("BRANCO", "FRENTE")    //ou o meu visualg esta bugado, ou so nao funciona o MudaCor mesmo
+    //MudaCor("BRANCO", "FRENTE")    //ou o meu visualg esta bugado, ou so nao funciona o MudaCor mesmo
 
     escreval(" |")
   fimpara
