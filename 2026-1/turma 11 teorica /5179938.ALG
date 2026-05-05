@@ -22,16 +22,16 @@ inicio
 fimprocedimento
 
 inicio
-   escreval("Digite 10 números inteiros:")
+   escreval("Digite 10 nÃºmeros inteiros:")
 
    para i de 1 ate 10 faca
-      escreva("Número ", i, ": ")
+      escreva("NÃºmero ", i, ": ")
       leia(numeros[i])
    fimpara
 
    contarParImpar(numeros, pares, impares)
 
-   escreval("Quantidade de números pares: ", pares)
-   escreval("Quantidade de números ímpares: ", impares)
+   escreval("Quantidade de nÃºmeros pares: ", pares)
+   escreval("Quantidade de nÃºmeros Ã­mpares: ", impares)
 
 fimalgoritmo
