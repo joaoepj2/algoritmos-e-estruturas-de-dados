@@ -1,0 +1,57 @@
+algoritmo "5182019"
+var
+   notas: vetor[1..5] de real
+   i: inteiro
+   media: real
+
+funcao calcularMedia(): real
+var
+   soma: real
+   j: inteiro
+inicio
+   soma <- 0
+   para j de 1 ate 5 faca
+      soma <- soma + notas[j]
+   fimpara
+   retorne soma / 5
+fimfuncao
+
+inicio
+   escreval("=== Sistema de Calculo de Medias ===")
+   escreval("")
+   escreval("Este programa calcula a media final de um aluno")
+   escreval("com base em 5 notas bimestrais.")
+   escreval("")
+   escreval("Instrucoes:")
+   escreval("- Digite cada nota quando solicitado")
+   escreval("- As notas devem ser valores entre 0 e 10")
+   escreval("- Use virgula para numeros decimais (ex: 7,5)")
+   escreval("- Ao final, o programa exibira a media e a situacao do aluno")
+   escreval("")
+   escreval("Pressione ENTER para comecar...")
+   leia(i)
+
+   escreval("")
+   escreval("--- Digite as 5 notas bimestrais ---")
+
+   para i de 1 ate 5 faca
+      escreva("  Bimestre ", i, " (0 a 10): ")
+      leia(notas[i])
+   fimpara
+
+   media <- calcularMedia()
+
+   escreval("")
+   escreval("=== Resultado Final ===")
+   escreval("Media calculada: ", media:5:2)
+
+   se media >= 6 entao
+      escreval("Situacao: APROVADO")
+   senao
+      escreval("Situacao: REPROVADO")
+   fimse
+
+   escreval("")
+   escreval("Obrigado por usar o sistema!")
+
+fimalgoritmo
