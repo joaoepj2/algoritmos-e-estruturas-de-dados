@@ -1,0 +1,75 @@
+algoritmo "relatorio_desempenho"
+
+var
+   qtd, indice: inteiro
+   listaNotas: vetor[1..50] de real
+   total, media: real
+   acimaMedia: inteiro
+
+// Entrada das notas
+procedimento coletarDados()
+inicio
+   indice <- 1
+   enquanto indice <= qtd faca
+      escreva("Digite a nota do aluno ", indice, ": ")
+      leia(listaNotas[indice])
+      indice <- indice + 1
+   fimenquanto
+fimprocedimento
+
+// Processamento
+procedimento calcularDados()
+inicio
+   total <- 0
+   indice <- 1
+   acimaMedia <- 0
+
+   enquanto indice <= qtd faca
+      total <- total + listaNotas[indice]
+      indice <- indice + 1
+   fimenquanto
+
+   media <- total / qtd
+
+   indice <- 1
+   enquanto indice <= qtd faca
+      se listaNotas[indice] >= media entao
+         acimaMedia <- acimaMedia + 1
+      fimse
+      indice <- indice + 1
+   fimenquanto
+fimprocedimento
+
+inicio
+   escreva("Informe o numero de alunos: ")
+   leia(qtd)
+
+   se (qtd < 1) ou (qtd > 50) entao
+      escreval("Valor invalido! Digite entre 1 e 50.")
+   senao
+      escreval("")
+      escreval("========== RELATORIO ==========")
+
+      coletarDados()
+      escreval("")
+
+      calcularDados()
+
+      escreval("Media da turma: ", media:2:2)
+      escreval("Total das notas: ", total:2:2)
+      escreval("Alunos acima ou iguais a media: ", acimaMedia)
+
+      se media >= 7 entao
+         escreval("Desempenho geral: BOM")
+      senao
+         se media >= 5 entao
+            escreval("Desempenho geral: REGULAR")
+         senao
+            escreval("Desempenho geral: RUIM")
+         fimse
+      fimse
+
+      escreval("===============================")
+   fimse
+
+fimalgoritmo
