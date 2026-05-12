@@ -1,0 +1,48 @@
+Algoritmo "5183296"
+
+Var
+   opcao, i, qntd : inteiro
+   notas : vetor[1..100] de real
+   soma, resultado : real
+
+Procedimento calculo()
+Inicio
+   resultado <- soma / qntd
+Fimprocedimento
+
+
+Inicio
+
+   soma <- 0
+   escreval("Seja bem vindo à plataforma School")
+   escreval("Selecione a opção desejada: ")
+   escreval("")
+   escreval("[1] Sistema de notas           [2] Encerrar aplicação")
+   leia(opcao)
+   se opcao = 2 entao
+      escreval("Encerrando aplicação")
+   senão
+      escreval("Seja bem vindo ao sistema de notas")
+      escreval("Quantas notas serão inseridas?")
+      leia(qntd)
+      se qntd <= 0 entao
+         escreval("Quantidade inválida")
+      senao
+         para i de 1 ate qntd faca
+            escreval("Insira a nota do aluno:")
+            leia(notas[i])
+            soma <- soma + notas[i]
+         fimpara
+         escreval("Soma total das notas inseridas são: ", soma)
+         calculo()
+         escreval("A média das notas dos ", qntd, " é igual a: ",resultado)
+      fimse
+   fimse
+
+
+
+
+
+
+
+Fimalgoritmo
