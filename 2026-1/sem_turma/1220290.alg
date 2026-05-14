@@ -5,7 +5,7 @@ var
    i: inteiro
    mediaFinal: real
 
-// Função
+// FunÃ§Ã£o
 funcao calcularMedia(): real
 var
    soma: real
@@ -31,7 +31,7 @@ inicio
 
    mediaFinal <- calcularMedia()
 
-   escreval("Média: ", mediaFinal:0:2)
+   escreval("MÃ©dia: ", mediaFinal:0:2)
 
    se mediaFinal >= 6 entao
       escreval("Aprovado")
