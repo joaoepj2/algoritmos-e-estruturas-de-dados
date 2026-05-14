@@ -1,0 +1,69 @@
+algoritmo "RA_7305720" // Use seu RA real aqui seguido da extensão .alg
+// Disciplina  : Algoritmos e Estrutura de Dados
+// Professor   : João
+// Descrição   : Sistema de processamento de pedidos com vetor e funções
+
+var
+   precos: vetor [1..3] de real
+   nomes: vetor [1..3] de caractere
+   opcao, qtd: inteiro
+   valor_final: real
+
+// Função para processar o cálculo e retornar o valor (Uso de Função/Procedimento)
+funcao calcular_pedido(quantidade: inteiro; preco_unitario: real): real
+inicio
+   retorne quantidade * preco_unitario
+fimfuncao
+
+inicio
+   // Inicialização dos dados (Vetor)
+   precos[1] <- 25.0
+   nomes[1]  <- "O Inexplicavel"
+   precos[2] <- 22.0
+   nomes[2]  <- "Uami Salad"
+   precos[3] <- 18.0
+   nomes[3]  <- "Classic Burger"
+
+   escreval("===========================================")
+   escreval("     SISTEMA DE GESTAO - UAMI BURGER      ")
+   escreval("===========================================")
+
+   // Estrutura de Repetição
+   repita
+      escreval("")
+      escreval("MENU DE OPCOES:")
+      escreval("1. ", nomes[1], " - R$", precos[1]:2:2)
+      escreval("2. ", nomes[2], " - R$", precos[2]:2:2)
+      escreval("3. ", nomes[3], " - R$", precos[3]:2:2)
+      escreval("0. Finalizar Pedido")
+      escreva("Escolha o item (0-3): ") // Informando o usuário
+      leia(opcao)
+
+      se (opcao >= 1) e (opcao <= 3) entao
+         escreva("Informe a quantidade para ", nomes[opcao], ": ")
+         leia(qtd)
+         
+         // Garante que a quantidade seja positiva
+         se (qtd > 0) entao
+            valor_final <- calcular_pedido(qtd, precos[opcao]) // Processamento[cite: 1]
+            
+            escreval("")
+            escreval(">>> RESUMO DO PROCESSAMENTO <<<")
+            escreval("Item: ", nomes[opcao])
+            escreval("Qtd: ", qtd)
+            escreval("Total do Item: R$", valor_final:2:2) // Resultado[cite: 1]
+            escreval("-------------------------------------------")
+         senao
+            escreval("Erro: A quantidade deve ser maior que zero.")
+         fimse
+      senao
+         se (opcao <> 0) entao
+            escreval("Erro: Opcao invalida. Tente novamente.")
+         fimse
+      fimse
+
+   ate (opcao = 0)
+
+   escreval("")
+   escreval("Pedido finalizado com sucesso. Boa sorte no trabalho!")
+fimalgoritmo

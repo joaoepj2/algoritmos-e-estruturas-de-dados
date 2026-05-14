@@ -1,19 +1,17 @@
-algoritmo "1228644.alg"
-
-Var
-// 1. Uso de um VETOR para armazenar as notas
+Algoritmo 
+// Autor(a)    : Felipe Goncalves Ferreira
+// Data atual  : 05/05/2026
+var
+   // 1. Uso de um VETOR para armazenar as notas
    notas: vetor[1..5] de real
    i: inteiro
    soma, mediaFinal: real
 
 // 2. Criação de uma FUNÇÃO para processar os dados (cálculo da média)
 funcao calcularMedia(total: real; quantidade: inteiro): real
-
-
 inicio
    retorne total / quantidade
 fimfuncao
-
 
 inicio
    // 3. Informando ao utilizador quais informações ele deve fornecer
@@ -43,7 +41,6 @@ inicio
    // Outra estrutura de repetição para exibir o que foi salvo no vetor
    para i de 1 ate 5 faca
       escreval("Nota ", i, ": ", notas[i])
-      fimpara
+   fimpara
 
-
-Fimalgoritmo
+fimalgoritmo
